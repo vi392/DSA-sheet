@@ -1,0 +1,11 @@
+class Solution {
+    static int isPossible(int N, int arr[]) {
+        // code here
+         int remainder = 0;
+        for (int i=0; i<N; i++)
+            remainder = (remainder + arr[i]) % 3;
+ 
+        // Return true if remainder is 0.
+        return (remainder % 3 == 0) ? 1 : 0;
+    }
+}
