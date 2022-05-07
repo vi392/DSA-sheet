@@ -1,0 +1,31 @@
+// 1st solution;
+class Solution
+{
+    public static void segragate012(int arr[], int N){
+        // Your Code Here
+        int f=0, s=0, t=0;
+        for(int i=0;i<N; i++){
+            if(arr[i]==0){
+                f++;
+            }
+            else if(arr[i]==1){
+                s++;
+            }
+            else{
+                t++;
+            }
+        }
+        // 2nd method
+        for(int i=0; i<f; i++){
+            arr[i]=0;
+        }
+        for(int i=f; i<f+s;i++){
+            arr[i]=1;
+        }
+        for(int i=f+s; i<s+f+t; i++){
+            arr[i]=2;
+        }
+        
+    }
+}
+// 2nd solution;
