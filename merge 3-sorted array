@@ -1,0 +1,27 @@
+ class Solution
+{
+    // A[], B[], C[]: input arrays
+    //Function to merge three sorted lists into a single list.
+    static ArrayList<Integer> merge3sorted(int A[], int B[], int C[])
+    {
+        // add ypur code here
+        // initialization or initialize the  size of array;
+        int M = B.length;
+        int N = A.length;
+        int P = C.length;
+         
+        ArrayList<Integer> res= new ArrayList<>();
+       
+        for(int i=0; i<N; i++){
+            res.add(A[i]);
+        }
+        for(int j=0; j<M; j++){
+            res.add(B[j]);
+        }
+        for(int k=0; k<P; k++){
+            res.add(C[k]);
+        }
+        Collections.sort(res);
+        return res;
+    }
+}
