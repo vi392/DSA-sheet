@@ -3,7 +3,7 @@ class Solution
   
     // n: size of array
     // x: element to find
-    //Function to find index of element x in the array if it is present.
+    //Function to find index of element x is present in the array..
     static long closer(int arr[], int n, long x)
     {
         // add your code here
